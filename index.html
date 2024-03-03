@@ -11,11 +11,11 @@
 <body>
   <div id="cabecera" class="container-fluid sticky-top pb-4 pt-4">
     <div class="row">
-        <div class="col-6">
+        <div class="col-8 col-sm-6">
           <img class="logo" src="img/logoremo.png" alt="">
         </div>
-        <div class="col-6 nav justify-content-center">
-            <nav class="navbar navbar-expand-lg">
+        <div class="col-4 col-sm-6 nav justify-content-end">
+            <nav class="navbar navbar-expand-sm">
                 <div class="container-fluid">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -86,24 +86,51 @@
   </div>
   <div id="card" class="container-fluid">
     <div class="row justify-content-evenly pb-3 pt-3">
-      <div class="card text-center bg-warning col-3" style="width: 18rem;">
+      <div class="card text-center bg-warning col-8" style="width: 30rem;">
         <div class="card-body border border-light">
           <h5 class="card-title">Nuestros Horarios</h5>
           <p class="card-text"><strong>Lunes</strong> <br> 8:30 a 13 - 16:30 a 20:30 <br><strong>Martes</strong> <br> 8:30 a 13 - 16:30 a 20:30 <br><strong>Miercoles</strong> <br> 8:30 a 13 - 16:30 a 20:30 <br><strong>Jueves</strong> <br> 8:30 a 13 - 16:30 a 20:30 <br> <strong>Viernes</strong> <br> 8:30 a 13 - 16:30 a 20:30 <br><strong>Sábado</strong> <br> 8:30 a 13 - 16:30 a 20:30 <br><strong>Domingo</strong> <br> Cerrado</p>
         </div>
       </div>
-      <div class="card text-center bg-warning col-3" style="width: 18rem;">
+      <div class="card text-center bg-warning col-8" style="width: 30rem;">
         <div class="card-body border border-light">
           <h5 class="card-title">Metodos de Pago</h5><br>
           <img src="img/pagos.png" class="card-img rounded"  alt="...">
           <p class="card-text"> <br> Recibimos Efectivo y tarjetas de débito bancarias y de billeteras virtuales</p>
         </div>
       </div>
-      <div class="card col-3 bg-warning justify-content-center">
-        <h4>Donde Estamos??</h4>
-        <p>Fray Luis Beltran 260, Villa Tulumaya, Lavalle.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.733791973828!2d-68.60037172532351!3d-32.71970086046055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e19417222942b%3A0xfc73b40ea93c7a8e!2sDeposito%20Zagaglia!5e0!3m2!1ses!2sar!4v1707188749390!5m2!1ses!2sar" style="border:0; border-radius:15%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row text-center bg-warning text-light">
+      <h1>Registrate para recibir novedades!!</h1><hr>
+    </div>
+    <form action="" class="row bg-warning text-center text-light justify-content-center pt-3">
+        <div class="col-12 mb-3">
+            <label for="metodo" class="form-label">Seleccionar</label>
+            <select id="metodo" class="form-select" aria-label="Default select example">
+                <option selected>Cómo quiere recibir las novedades?</option>
+                <option value="1">Whasapp</option>
+                <option value="2">E-mail</option>
+            </select>
+        </div>
+        <div class="col-6 mb-3">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input type="text" class="form-control" id="telefono" aria-describedby="emailHelp">
+        </div>
+        <div class="col-6 mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+        </div>
+        <div class="col-4 pt-4 mt-2 mb-3">
+            <button type="submit" class="btn btn-dark text-light">Suscribirme</button>
+        </div>
+    </form>    
+  </div>
+  <div id="maps" class="container-fluid">
+    <div class="row text-light pt-3 pb-5 text-center">
+      <h3 class="pb-3">Nuestra Ubicación</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.733791973828!2d-68.60037172532351!3d-32.71970086046055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e19417222942b%3A0xfc73b40ea93c7a8e!2sDeposito%20Zagaglia!5e0!3m2!1ses!2sar!4v1709081737019!5m2!1ses!2sar" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
   <div id="whatsapp">
@@ -112,8 +139,8 @@
 
   <div class="container-fluid">
       <div class="row bg-secondary justify-content-center">
-          <div class="col-10 text-light bg-secondary"><br><hr>
-              <h4>Depósito Zagaglia Mayorista de Lavalle - Mendoza</h4>
+          <div class="col-8 col-sm-12 text-light bg-secondary"><br><hr>
+              <h4>Depósito Zagaglia Mayorista Lavalle  Mendoza</h4>
               <p><strong>¿Querés Contactarnos?</strong></p>
               <p>Escribinos por WhatsApp ó llamanos al</p>
               <p><strong>+54 9 261 343-4476</strong></p><hr>

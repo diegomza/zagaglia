@@ -7,7 +7,7 @@
     background-color: #ffc107;
 }
 
-#carrusel, #card, #bodyContacto {
+#carrusel, #card, #maps, #bodyContacto {
     background-color: red;
 }
 
@@ -50,7 +50,7 @@
     height: 80px;
     width: 80px;
     bottom: 35px;
-    right: 10%;
+    right: 5%;
 }
 
 #whatsapp img {
@@ -62,3 +62,19 @@
     padding-top: 25px;
 }
 
+@media all and (max-width: 576px){
+
+    #whatsapp {
+        position: fixed;
+        height: 80px;
+        width: 80px;
+        bottom: 35px;
+        right: 3%;
+    }
+    
+    #whatsapp img {
+        height: 80px;
+        width: 80px;
+    }
+
+}
