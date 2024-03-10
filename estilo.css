@@ -12,14 +12,19 @@
 }
 
 .logo {
-    width: 300px;
-    height: 100px;
+    width: 200px;
+}
+
+.navbar ul li a{
+    color: black;
+    font-weight: bold;
 }
 
 
 .navbar ul li a:hover{
     text-decoration: underline;
-    opacity: 75%;
+    text-transform: uppercase;
+    text-shadow: 50%    ;
 }
 
 #separador {
