@@ -12,7 +12,7 @@
   <div id="cabecera" class="container-fluid sticky-top pb-4 pt-4">
     <nav class="navbar navbar-expand-sm">
         <div class="container-fluid bg-warning"> 
-          <img class="logo" src="img/logoremo.png" alt="logo deposito zagaglia">
+          <a href="index.html"><img class="logo" src="img/logoremo.png" alt="logo deposito zagaglia"></a>
           <div class="row">
             <div class="col">  
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,21 +46,21 @@
       </div>
     </div>  
     <div class="row">
-      <div class="col-12 col-lg-8">
-        <h3>Más de 10 años acompañando al comercio de Lavalle</h3>
-        <p class="fs-5">La historia comienza allá por 1982, cuando Juan Zagaglia instala un pequeño comercio frente a la plaza departamental.
+      <div class="col-12 col-lg-9">
+        <h3>Más de 15 años acompañando al comercio de Lavalle</h3>
+        <p class="textnos fs-5">La historia comienza allá por 1982, cuando Juan Zagaglia instala un pequeño comercio frente a la plaza departamental.
           Desde sus inicios, el objetivo fué brindar el mayor surtido al mejor precio para abastecer a los habitantes de la zona.
           Después de años de mucho esfuerzo y arduo trabajo, el pequeño comercio se mudó a una superficie mas amplia y se transformó en uno de los primeros autoservicios
           del lugar, logrando dar una mejor atención y mayor surtido a sus clientes.</p>
       </div>
-      <div class="col-6 col-lg-4">
-        <img src="img/fotoNosotros_2.png" alt=" ">
+      <div class="col col-lg-3">
+        <img src="img/fotoNosotros_2.png" alt="imagen de depósito zagaglia">
       </div>
-      <div class="col-6 col-lg-4">
-        <img src="img/fotoNosotros_3.png" alt="">
+      <div class="col col-lg-3">
+        <img src="img/fotoNosotros_3.png" alt="imagen de depósito zagaglia">
       </div>
-      <div class="col-12 col-lg-8 text-end">
-        <p class="fs-5">A partir del año 2010 y, al compás de los exigentes cambios y tendencias del mercado,
+      <div class="col-12 col-lg-9 text-end">
+        <p class="textnos fs-5">A partir del año 2010 y, al compás de los exigentes cambios y tendencias del mercado,
           se inaugurá un segundo local comercial dando paso a la modalidad de autoservicio mayorista, ofreciendo la posibilidad de comprar al por mayor con un mejor precio
           y así brindar una alternativa a los comercios de la zona que necesitan abastecer sus gondolas. Gracias al acompañamiento de los clientes, la empresa siguió creciendo en superficie, surtido y servicios. Actualmente esta empresa familiar 100% Mendocina denominada “Depósito Zagaglia",
             continua adelante con Juan Zagaglia, quien a diario centra su esfuerzo en mantener viva la tradición de honestidad y seriedad que lo caracteriza, sin perder de vista ofrecer “el mayor surtido al mejor precio”.</p>
@@ -71,19 +71,42 @@
     <div class="row text-center">
       <h1>Trabajá con Nosotros</h1>
     </div>
-    <form action="" class="row text-center justify-content-center pt-3">
-      <div class="col-12 col-lg-8 mb-5">
+    <form action="" class="row text-center justify-content-center pt-3 needs-validation" novalidate>
+      <div class="col-12 col-lg-8 mb-3">
         <label for="formFile" class="form-label"> <p class="fs-5">Adjuntá tu Curriculum</p></label>
-        <input class="form-control" type="file" id="formFile">
+        <input class="form-control" type="file" id="formFile" required>
+        <div class="invalid-feedback">
+          No adjuntó el archivo!!
+        </div>
+      </div>
+      <div class="row justify-content-center">  
+        <div class="col-3 mb-5">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
       </div>
     </form>
   </div>
-  <div id="whatsapp">
-    <a href="https://wa.me/2615434154" target="new"> <img src="img/whatsapp_boton.webp" alt="whatsapp"></a>
-  </div>
+  <script>
+    (() => {
+      'use strict'
+
+      const forms = document.querySelectorAll('.needs-validation')
+
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
   <div class="container-fluid">
       <div class="row bg-secondary justify-content-center">
-          <div class="col-8 col-sm-12 text-light bg-secondary"><br><hr>
+          <div class="col-10 text-light bg-secondary"><br><hr>
               <h4>Depósito Zagaglia Mayorista de Lavalle - Mendoza</h4>
               <p><strong>¿Querés Contactarnos?</strong></p>
               <p>Escribinos por WhatsApp ó llamanos al</p>

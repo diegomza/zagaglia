@@ -82,4 +82,8 @@
         width: 80px;
     }
 
+    .textnos {
+        text-align: justify;
+    }
+
 }

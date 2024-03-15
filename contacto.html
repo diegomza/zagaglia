@@ -12,7 +12,7 @@
   <div id="cabecera" class="container-fluid sticky-top pb-4 pt-4">
     <nav class="navbar navbar-expand-sm">
         <div class="container-fluid bg-warning"> 
-          <img class="logo" src="img/logoremo.png" alt="logo deposito zagaglia">
+          <a href="index.html"><img class="logo" src="img/logoremo.png" alt="logo deposito zagaglia"></a>
           <div class="row">
             <div class="col">  
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,29 +47,38 @@
     </div>
     <div class="row justify-content-center pb-5">
       <div class="col-12">
-        <form action="" class="border border-secondary border-2 rounded">
+        <form action="" class="text-light border border-secondary border-2 rounded needs-validation" novalidate>
           <div class="row justify-content-center">
-            <div class="col-10 col-md-5 mt-3 text-light">
+            <div class="col-10 col-md-5 mt-3">
               <label for="nombreForm" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombreForm" aria-describedby="emailHelp">
+              <input type="text" class="form-control" id="nombreForm" aria-describedby="emailHelp" required>
+              <div class="invalid-feedback text-light">
+                Campo Obligatorio!
+              </div>
             </div>  
-            <div class="col-10 col-md-5 mt-3 text-light">
+            <div class="col-10 col-md-5 mt-3">
               <label for="apellidoForm" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="apellidoForm" aria-describedby="emailHelp">
+              <input type="text" class="form-control" id="apellidoForm" aria-describedby="emailHelp" required>
+              <div class="invalid-feedback text-light">
+                Campo Obligatorio!
+              </div>
             </div>
-          </div>
+          </div>       
           <div class="row justify-content-center">
-            <div class="col-10 col-md-5 mt-3 text-light">
+            <div class="col-10 col-md-5 mt-3">
               <label for="emailForm" class="form-label">Email</label>
-              <input type="email" class="form-control" id="emailForm" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="emailForm" aria-describedby="emailHelp" required>
+              <div class="invalid-feedback text-light">
+                E-mail inválido!
+              </div>
             </div>
-            <div class="col-10 col-md-5 mt-3 text-light">
+            <div class="col-10 col-md-5 mt-3">
               <label for="telefonoForm" class="form-label">Teléfono</label>
               <input type="text" class="form-control" id="telefonoForm" aria-describedby="emailHelp">
             </div>
           </div>
           <div class="row justify-content-center">
-            <div class="col-10 col-md-5 mt-3 text-light">
+            <div class="col-10 col-md-5 mt-3">
               <label for="asuntoForm" class="form-label">Asunto</label>
               <select id="asuntoForm" class="form-select" aria-label="Default select example">              
                 <option selected>Seleccione una opción</option>
@@ -78,9 +87,12 @@
                 <option value="3">Trámites</option>
               </select>
             </div>
-            <div class="col-10 col-md-5 mt-3 text-light">
+            <div class="col-10 col-md-5 mt-3">
               <label for="comentarioForm" class="form-label">Comentario</label>
-              <textarea name="comentarioForm" required="" class="form-control"></textarea> 
+              <textarea name="comentarioForm" required="" class="form-control"></textarea>
+              <div class="invalid-feedback text-light">
+                Complete esta Área!
+              </div> 
             </div>
           </div>
           <div class="row justify-content-center">  
@@ -91,7 +103,28 @@
         </form>
       </div>
     </div>
-  </div>
+  </div>  
+  <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
   <div class="container-fluid">
     <div class="row bg-secondary justify-content-center">
         <div class="col-10 text-light bg-secondary"><br><hr>
